@@ -410,7 +410,7 @@ li{
 
 /* Start testimonials */
     .testimonials{
-        padding: 20px 0;
+        padding: 0 0 20px 0;
         color: #434343;
         text-align: center;
         border-radius: .8rem;
@@ -429,7 +429,7 @@ li{
     .col{
         flex: 33.33%;
         max-width: 33.33%;
-        padding: 15px;
+        /* padding: 15px; */
     }
     .testimonial{
         background: #16162d;
@@ -649,6 +649,49 @@ input[type="submit"]:hover{
         height: 7rem;
     }
 
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    .portfolio-img {
+        margin-bottom: 5rem;
+    }
+    .portfolio-description {
+        order: 1;
+    }
+    .has-margin-left {
+        margin-left: 0rem;
+    }
+    .has-margin-right {
+        margin-right: 0rem;
+    }
+
+    .portfolio-description h6 {
+        text-align: center;
+    }
+
+    .portfolio-description h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .portfolio-description .cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #3883ff;
+        transition: color 650ms;
+        -webkit-transition: color 650ms;
+        -moz-transition: color 650ms;
+    }
+
     .icon-container i{
         font-size: 4rem;
     }
@@ -663,6 +706,15 @@ input[type="submit"]:hover{
 
     .timeline .date::after{
         left: -5.9rem;
+    }
+
+    .social-list {
+        flex-direction: row;
+    }
+
+    .social-list li:nth-child(1) {
+        margin-right: 2rem;
+        margin-bottom: 0;
     }
 }
 
@@ -731,6 +783,11 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 375px) {
+
+    .container {
+        padding-bottom: 90px;
+    }
+
     .landing-text h1{
         font-size: 12rem;
     }
@@ -740,6 +797,16 @@ input[type="submit"]:hover{
         font-size: 1.5rem;
         font-weight: 300;
     }
+
+    .about-heading h1 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .about-heading h6 {
+        display: none;
+    }
     .skill-info{
         display: flex;
         flex-wrap: wrap;
@@ -747,10 +814,21 @@ input[type="submit"]:hover{
     .skills{
         margin-bottom: 1.4rem;
     }
+
+    .inner{
+        padding: 0;
+    }
+    
 }
 
-@media screen and (max-width: 360) {
-    
+@media screen and (max-width: 320px) {
+    .landing-text h1{
+        font-size: 10rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 /*End media queries*/
