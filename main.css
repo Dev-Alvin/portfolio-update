@@ -619,6 +619,14 @@ input[type="submit"]:hover{
         background: url(images/sitebg2.jpg) no-repeat center fixed;
         background-size: cover;
     }
+    .container{
+        width: 100%;
+        /* max-width: 120rem;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 280px; */
+    }
     .landing-text h1{
         font-size: 13rem;
     }
